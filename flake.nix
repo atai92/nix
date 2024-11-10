@@ -59,6 +59,8 @@
             pkgs.bash-completion
             pkgs.nix-bash-completions
             pkgs.rectangle
+            pkgs._1password-gui
+            pkgs.arc-browser
           ];
 
           homebrew = {
@@ -67,7 +69,7 @@
 
             taps = [ ];
             brews = [ ];
-            casks = [ 
+            casks = [
               # "linearmouse"
             ];
           };
@@ -111,9 +113,9 @@
             # file.{symlink_path}.source will symlink the file at the assigned path to the {symlink_path}
             # The assigned path must be local to the flake.
             file = {
-                ".config".source = ./config;
-                "test".source = ./config;
-              };
+              ".config".source = ./config;
+              "test".source = ./config;
+            };
           };
         };
     in
