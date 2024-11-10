@@ -59,8 +59,6 @@
             pkgs.bash-completion
             pkgs.nix-bash-completions
             pkgs.rectangle
-            pkgs._1password-gui
-            pkgs.arc-browser
           ];
 
           homebrew = {
